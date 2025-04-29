@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="portafolio.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Tejado - Portafolio</title>
+    <style>
+        :root {
+            --color-primario-claro: #FFEBEE;
+            --color-primario-medio: #F8BBD0; /* Rosa claro (acentos) */
+            --color-secundario: #E91E63;     /* Rosa fuerte/Magenta (títulos, botones) */
+            --color-acento-rojo: #D32F2F;    /* Rojo (botones hover, detalles) */
+            --color-texto: #333333;         /* Gris oscuro (texto principal) */
+            --color-texto-claro: #FFFFFF;   /* Blanco (texto en botones) */
+            --color-borde: #F48FB1;       /* Rosa medio para bordes */
+            --color-sombra: rgba(233, 30, 99, 0.2); /* Sombra rosada suave */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-primario-claro);
+            color: var(--color-texto);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px var(--color-sombra);
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        h1, h2, h3 {
+            color: var(--color-secundario);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--color-primario-medio);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--color-secundario);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--color-acento-rojo);
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: var(--color-primario-medio);
+            border-radius: 15px 15px 0 0; 
+            margin: -1.5rem -1.5rem 2rem -1.5rem; 
+        }
+
+        .hero h1 {
+            color: var(--color-texto-claro); 
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .hero .subtitulo {
+            font-size: 1.2rem;
+            color: var(--color-texto);
+            margin-bottom: 1.5rem;
+        }
+
+        #sobre-mi {
+            text-align: center;        }
+
+
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem; 
+            margin-top: 1.5rem;
+        }
+
+        .proyecto-card {
+            background-color: var(--color-primario-claro);
+            border: 1px solid var(--color-borde);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px var(--color-sombra);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .proyecto-card:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 6px 12px var(--color-sombra);
+        }
+
+        .proyecto-card h3 {
+            color: var(--color-secundario);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .proyecto-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1; 
+        }
+
+        .boton-proyecto {
+            display: inline-block;
+            background-color: var(--color-secundario);
+            color: var(--color-texto-claro) !important; /* Asegura que las letras se mantengan blancas */
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px; 
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            align-self: flex-start;
+        }
+
+        .boton-proyecto:hover {
+            background-color: var(--color-acento-rojo);
+            text-decoration: none;
+            transform: scale(1.05); 
+        }
+
+        #contacto ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #contacto li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        #contacto i { 
+            margin-right: 0.5rem;
+            color: var(--color-secundario);
+        }
+
+        #contacto p{
+            color: var(--color-secundario);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            background-color: var(--color-primario-medio);
+            color: var(--color-texto);
+            border-radius: 0 0 15px 15px;
+            width: 100%; 
+        }
+
+
+    </style>
+    </head>
+<body>
+
+    <main>
+        <div class="container">
+
+            <header class="hero">
+                <h1>Leandro Tejado</h1>
+                <p class="subtitulo">Estudiante de Programación</p>
+                 </header>
+
+            <section id="sobre-mi">
+                <h2>Sobre Mí</h2>
+                <p>
+                    ¡Hola! Soy Leandro Tejado, un apasionado estudiante de programación. 
+                    Me encanta aprender nuevas tecnologías y crear proyectos que resuelvan problemas reales. 
+                    Actualmente estoy aprendiendo sobre desarrollo web y me interesa mucho el diseño de interfaces.
+                    Me gusta trabajar en equipo y siempre estoy buscando nuevas oportunidades para crecer profesionalmente.
+                    </p>
+            </section>
+
+            <section id="proyectos">
+                <h2>Mis Proyectos</h2>
+                <div class="proyectos-grid">
+
+                    <div class="proyecto-card">
+                        <h3>Barrio Mando</h3>
+                        <p>
+                            En este proyecto cree una landing page para unos colegas de barrio Mando,
+                            una app la cual permite a la comunidad gestionar y controlar las utilidades del barrio privado
+                        </p>
+                        <a href="https://github.com/Leandrotejado/BarrioMando2.github.io" target="_blank" class="boton-proyecto">Ver en GitHub</a>
+                        <br>
+                        <a href="https://leandrotejado.github.io/BarrioMando2.github.io/" target="_blank" class="boton-proyecto">Abrir Sitio WEB</a>
+                    </div>
+                    <div class="proyecto-card">
+                        <h3>CafeBar "Panaderia"</h3>
+                        <p>
+                            Un sitio web para una cafeteria que tiene eventos como recitales, feria de artesanos, etc.
+                        </p>
+                        <a href="https://github.com/LaVaganciaOficial/PanaderiaTortuguitas" target="_blank" class="boton-proyecto">Ver en GitHub</a>
+                        <br>
+                        <a href="https://lavaganciaoficial.github.io/PanaderiaTortuguitas/" target="_blank" class="boton-proyecto">Abrir Sitio WEB</a>
+                    </div>
+                    <div class="proyecto-card">
+                        <h3>Cuidarte</h3>
+                        <p>
+                            una pagina para facilitar los turnos con obras sociales
+                            y ver recetas medicas con facilidad.
+                        </p>
+                        <a href="https://github.com/cuidartee/cuidartee" target="_blank" class="boton-proyecto">Ver en GitHub</a>
+                        <br>
+                        <a href="https://cuidartee.github.io/cuidartee/" target="_blank" class="boton-proyecto">Abrir Sitio WEB</a>
+                    </div>
+                    </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Puedes encontrarme en:</p>
+                <ul>
+                    <li> Email: <a href="mailto:leansauan29@gmail.com">leansauan29</a>
+                    </li>
+                    <li>
+                        GitHub: <a href="https://github.com/Leandrotejado" target="_blank">Leandrotejado</a>
+                    </li>
+                    <li>
+                        LinkedIn: <a href="www.linkedin.com/in/leandro-tejado" target="_blank">Leandro Tejado</a>
+                    </li>
+                    </ul>
+            </section>
+
+        </div> </main>
+
+    <footer>
+        <p>&copy; 2025 Leandro Tejado</p>
+    </footer>
+
+</body>
+</html>
