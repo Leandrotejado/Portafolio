@@ -1,4 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Button</title>
   <style>
     .btn-82,
     .btn-82 *,
@@ -25,6 +30,7 @@
       margin: 0;
       -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
       padding: 0;
+      text-decoration: none;
     }
     .btn-82:disabled {
       cursor: default;
@@ -43,7 +49,7 @@
       background: none;
       border-radius: 999px;
       box-sizing: border-box;
-      display: block;
+      display: inline-block;
       overflow: hidden;
       padding: 1.2rem 3rem;
       position: relative;
@@ -188,11 +194,18 @@
       margin: 0;
       background-color: #f0f0f0;
     }
-    </style>
-    <body>
-      <button class="btn-82">
-    <span><p><a href="https://leandrotejado.github.io/Portafolio/">PAGINA PORTAFOLIO</a></p></span>
-      </button>
-  </body>
+    .btn-82 a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 900;
+      mix-blend-mode: difference;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://leandrotejado.github.io/Portafolio/" class="btn-82">
+    <span>PAGINA PORTAFOLIO</span>
+  </a>
+</body>
 </html>
 Un vistazo a mis proyectos de desarrollo de software y contribuciones. Explora mi código, descubre mis habilidades y sígueme en mi camino como desarrollador.
