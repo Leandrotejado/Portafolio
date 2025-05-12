@@ -1,35 +1,31 @@
-👋 ¡Bienvenido a mi GitHub! 🚀
+👋 ¡Leandro Tejado - Desarrollador Apasionado! 🚀  
 
-Soy Leandro Tejado, un desarrollador de software apasionado por crear soluciones innovadoras y eficientes. Aquí encontrarás un vistazo a mis proyectos, habilidades y contribuciones. ¡Explora mi código y acompáñame en mi viaje como desarrollador! 😄
-
-🔗 ¡Visita mi Portafolio!
-Un espacio donde muestro mis proyectos más destacados y mi experiencia como desarrollador.
-
+Soy un desarrollador de software entusiasta, creando soluciones innovadoras con código limpio y eficiente. Aquí encontrarás mis proyectos, habilidades y contribuciones. ¡Explora mi trabajo y únete a mi viaje como desarrollador! 😎
 
 🛠️ Habilidades Técnicas
 
-Lenguajes: JavaScript, Python, HTML, CSS, [otros que desees agregar]
-Frameworks y Herramientas: React, Node.js, Git, [otros]
-Bases de Datos: MySQL, MongoDB, [otros]
-Otros: Desarrollo Web, APIs, DevOps, [otros]
+Lenguajes: JavaScript, Python, HTML, CSS
+Frameworks y Herramientas: React, Node.js, Git
+Bases de Datos: MySQL, MongoDB
+Otros: Desarrollo Web, APIs REST, CI/CD
 
 
 
 🌟 Proyectos Destacados
-Aquí algunos de mis proyectos favoritos. ¡Échales un vistazo! 👀
+¡Echa un vistazo a algunos de mis proyectos favoritos! 👇
 
-Nombre del Proyecto 1Descripción breve del proyecto. Tecnologías usadas: [Ejemplo: React, Node.js].
+Proyecto 1Breve descripción del proyecto. Tecnologías: React, Node.js.
 
-Nombre del Proyecto 2Descripción breve del proyecto. Tecnologías usadas: [Ejemplo: Python, Flask].
+Proyecto 2Breve descripción del proyecto. Tecnologías: Python, Flask.
 
-Nombre del Proyecto 3Descripción breve del proyecto. Tecnologías usadas: [Ejemplo: JavaScript, MongoDB].
+Proyecto 3Breve descripción del proyecto. Tecnologías: JavaScript, MongoDB.
 
 
 
 📊 Estadísticas de GitHub
 
 
-📫 ¡Conéctate conmigo!
+📫 Conéctate conmigo
 
 📧 Correo: tu.email@ejemplo.com
 💼 LinkedIn: tu-perfil-linkedin
@@ -37,10 +33,10 @@ Nombre del Proyecto 3Descripción breve del proyecto. Tecnologías usadas: [Ejem
 🐦 X: @tu-usuario
 
 
-🎯 ¿Qué estoy haciendo ahora?
+🎯 Actualmente
 
-🔍 Explorando nuevas tecnologías como [ejemplo: Web3, IA].
-💻 Contribuyendo a proyectos de código abierto.
-📚 Aprendiendo [ejemplo: Rust, GraphQL].
+🔍 Explorando [ejemplo: IA, Web3].
+💻 Contribuyendo a proyectos open-source.
+📚 Aprendiendo [ejemplo: TypeScript, Docker].
 
-¡Gracias por visitar mi perfil! Si te gusta lo que ves, no olvides dejar una ⭐ en mis repositorios o contactarme para colaborar en algo genial. 🚀
+¡Gracias por visitar mi perfil! Si te interesa mi trabajo, deja una ⭐ en mis repositorios o contáctame para colaborar en algo épico. 🚀
