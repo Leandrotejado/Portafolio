@@ -1,211 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Button</title>
-  <style>
-    .btn-82,
-    .btn-82 *,
-    .btn-82 :after,
-    .btn-82 :before,
-    .btn-82:after,
-    .btn-82:before {
-      border: 0 solid;
-      box-sizing: border-box;
-    }
-    .btn-82 {
-      -webkit-tap-highlight-color: transparent;
-      -webkit-appearance: button;
-      background-color: #000;
-      background-image: none;
-      color: #fff;
-      cursor: pointer;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-      font-size: 100%;
-      font-weight: 900;
-      line-height: 1.5;
-      margin: 0;
-      -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-      padding: 0;
-      text-decoration: none;
-    }
-    .btn-82:disabled {
-      cursor: default;
-    }
-    .btn-82:-moz-focusring {
-      outline: auto;
-    }
-    .btn-82 svg {
-      display: block;
-      vertical-align: middle;
-    }
-    .btn-82 [hidden] {
-      display: none;
-    }
-    .btn-82 {
-      background: none;
-      border-radius: 999px;
-      box-sizing: border-box;
-      display: inline-block;
-      overflow: hidden;
-      padding: 1.2rem 3rem;
-      position: relative;
-      text-transform: uppercase;
-    }
-    .btn-82 span {
-      font-weight: 900;
-      mix-blend-mode: difference;
-      transition: opacity 0.2s;
-    }
-    .btn-82:hover span {
-      -webkit-animation: text-reset 0.2s 0.8s forwards;
-      animation: text-reset 0.2s 0.8s forwards;
-      opacity: 0;
-    }
-    .btn-82:after,
-    .btn-82:before {
-      border: 4px solid #fff;
-      border-radius: 999px;
-      content: "";
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: height 0.2s;
-      width: 100%;
-    }
-    .btn-82:after {
-      background: #fff;
-      border: none;
-      height: 2rem;
-      width: 0;
-      z-index: -1;
-    }
-    .btn-82:hover:before {
-      -webkit-animation: border-reset 0.2s linear 0.78s forwards;
-      animation: border-reset 0.2s linear 0.78s forwards;
-      height: 2rem;
-    }
-    .btn-82:hover:after {
-      -webkit-animation: progress-bar 1s;
-      animation: progress-bar 1s;
-    }
-    @-webkit-keyframes progress-bar {
-      0% {
-        opacity: 1;
-        width: 0;
-      }
-      10% {
-        opacity: 1;
-        width: 15%;
-      }
-      25% {
-        opacity: 1;
-        width: 25%;
-      }
-      40% {
-        opacity: 1;
-        width: 35%;
-      }
-      55% {
-        opacity: 1;
-        width: 75%;
-      }
-      60% {
-        opacity: 1;
-        width: 100%;
-      }
-      to {
-        opacity: 0;
-        width: 100%;
-      }
-    }
-    @keyframes progress-bar {
-      0% {
-        opacity: 1;
-        width: 0;
-      }
-      10% {
-        opacity: 1;
-        width: 15%;
-      }
-      25% {
-        opacity: 1;
-        width: 25%;
-      }
-      40% {
-        opacity: 1;
-        width: 35%;
-      }
-      55% {
-        opacity: 1;
-        width: 75%;
-      }
-      60% {
-        opacity: 1;
-        width: 100%;
-      }
-      to {
-        opacity: 0;
-        width: 100%;
-      }
-    }
-    @-webkit-keyframes border-reset {
-      0% {
-        height: 2rem !important;
-      }
-      to {
-        height: 100% !important;
-      }
-    }
-    @keyframes border-reset {
-      0% {
-        height: 2rem !important;
-      }
-      to {
-        height: 100% !important;
-      }
-    }
-    @-webkit-keyframes text-reset {
-      0% {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    @keyframes text-reset {
-      0% {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-    .btn-82 a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 900;
-      mix-blend-mode: difference;
-    }
-  </style>
-</head>
-<body>
-  <a href="https://leandrotejado.github.io/Portafolio/" class="btn-82">
-    <span>PAGINA PORTAFOLIO</span>
-  </a>
-</body>
-</html>
-Un vistazo a mis proyectos de desarrollo de software y contribuciones. Explora mi código, descubre mis habilidades y sígueme en mi camino como desarrollador.
+👋 ¡Bienvenido a mi GitHub! 🚀
+
+Soy Leandro Tejado, un desarrollador de software apasionado por crear soluciones innovadoras y eficientes. Aquí encontrarás un vistazo a mis proyectos, habilidades y contribuciones. ¡Explora mi código y acompáñame en mi viaje como desarrollador! 😄
+
+🔗 ¡Visita mi Portafolio!
+Un espacio donde muestro mis proyectos más destacados y mi experiencia como desarrollador.
+
+
+🛠️ Habilidades Técnicas
+
+Lenguajes: JavaScript, Python, HTML, CSS, [otros que desees agregar]
+Frameworks y Herramientas: React, Node.js, Git, [otros]
+Bases de Datos: MySQL, MongoDB, [otros]
+Otros: Desarrollo Web, APIs, DevOps, [otros]
+
+
+
+🌟 Proyectos Destacados
+Aquí algunos de mis proyectos favoritos. ¡Échales un vistazo! 👀
+
+Nombre del Proyecto 1Descripción breve del proyecto. Tecnologías usadas: [Ejemplo: React, Node.js].
+
+Nombre del Proyecto 2Descripción breve del proyecto. Tecnologías usadas: [Ejemplo: Python, Flask].
+
+Nombre del Proyecto 3Descripción breve del proyecto. Tecnologías usadas: [Ejemplo: JavaScript, MongoDB].
+
+
+
+📊 Estadísticas de GitHub
+
+
+📫 ¡Conéctate conmigo!
+
+📧 Correo: tu.email@ejemplo.com
+💼 LinkedIn: tu-perfil-linkedin
+🌐 Portafolio: leandrotejado.github.io/Portafolio
+🐦 X: @tu-usuario
+
+
+🎯 ¿Qué estoy haciendo ahora?
+
+🔍 Explorando nuevas tecnologías como [ejemplo: Web3, IA].
+💻 Contribuyendo a proyectos de código abierto.
+📚 Aprendiendo [ejemplo: Rust, GraphQL].
+
+¡Gracias por visitar mi perfil! Si te gusta lo que ves, no olvides dejar una ⭐ en mis repositorios o contactarme para colaborar en algo genial. 🚀
