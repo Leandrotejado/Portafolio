@@ -89,6 +89,8 @@
     <!-- Collage Modal -->
     <div class="collage-modal" id="collageModal">
         <div class="collage-modal-content">
+            <img id="collageSelectedImage" class="collage-selected-image" alt="Trabajo seleccionado" hidden>
+            <p id="collageSelectedTitle" class="collage-selected-title" hidden></p>
             <button class="collage-modal-close" onclick="closeCollageModal()">
                 <i class="fas fa-times"></i>
             </button>
@@ -330,7 +332,7 @@
         <h2>Mis Trabajos</h2>
         <div class="gallery-grid">
             <!-- Trabajo 1 -->
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 1: Reemplaza con tu imagen -->
                 <img src="linea fina.jpg" class="gallery-img" alt="Diseño Lineal" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -342,7 +344,7 @@
             </div>
 
             <!-- Trabajo 2 -->
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 2: Reemplaza con tu imagen -->
                 <img src="yo.jpeg" class="gallery-img" alt="Sombras y Detalles" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -354,7 +356,7 @@
             </div>
 
             <!-- Trabajo 2 -->
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 2: Reemplaza con tu imagen -->
                 <img src="relleno.jpg" class="gallery-img" alt="Sombras y Detalles" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -366,7 +368,7 @@
             </div>
 
             <!-- Trabajo 3 -->
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 3: Reemplaza con tu imagen -->
                 <img src="ciro.jpeg" class="gallery-img" alt="Arte Personalizado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -377,7 +379,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 3: Reemplaza con tu imagen -->
                 <img src="belen.jpeg" class="gallery-img" alt="Arte Personalizado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -388,7 +390,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 3: Reemplaza con tu imagen -->
                 <img src="propio2.jpeg" class="gallery-img" alt="Arte Personalizado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -399,7 +401,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 3: Reemplaza con tu imagen -->
                 <img src="m.jpeg" class="gallery-img" alt="Arte Personalizado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -410,7 +412,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN 3: Reemplaza con tu imagen -->
                 <img src="a.jpeg" class="gallery-img" alt="Arte Personalizado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -422,7 +424,7 @@
             </div>
 
             <!-- Tu diseño especial -->
-            <div class="gallery-item" onclick="openCollageModal()">
+            <div class="gallery-item" onclick="openCollageModal(this)">
                 <!-- CAMBIAR IMAGEN EXTRA: Pon aquí tu diseño propio -->
                 <img src="personalizado.jpg" class="gallery-img" alt="Diseño Especial" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="gallery-placeholder" style="display:none;">
@@ -635,8 +637,21 @@
         }
 
         // Funciones para el modal del collage
-        function openCollageModal() {
+        function openCollageModal(item) {
             const modal = document.getElementById('collageModal');
+            const image = item ? item.querySelector('.gallery-img') : null;
+            const title = item ? item.querySelector('.gallery-title') : null;
+            const preview = document.getElementById('collageSelectedImage');
+            const caption = document.getElementById('collageSelectedTitle');
+            if (preview && image && image.getAttribute('src')) {
+                preview.src = image.src;
+                preview.alt = image.alt || 'Trabajo de Nikavida Tattoo';
+                preview.hidden = false;
+            }
+            if (caption && title) {
+                caption.textContent = title.textContent.trim();
+                caption.hidden = false;
+            }
             if (modal) {
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
